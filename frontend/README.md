@@ -27,8 +27,3 @@
 ### Backend (Python)
 
 The backend of the game is written in Python and handles the word similarity calculations.
-
-#### Prerequisites
-
-- Python 3.9+
-- `pip`

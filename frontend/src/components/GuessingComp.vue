@@ -197,6 +197,13 @@ input {
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
 }
 
 .enter-guess,
@@ -247,6 +254,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  animation: fadeIn 0.5s;
 }
 
 .dark-mode .rules-content {
@@ -293,5 +301,30 @@ button:disabled {
   cursor: pointer;
   transition: color 0.3s ease;
   float: right;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .enter-guess,
+  .show-rules {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>

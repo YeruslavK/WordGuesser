@@ -44,7 +44,6 @@ onMounted(() => {
 </template>
 
 <style>
-/* Define light mode colors */
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
@@ -53,7 +52,6 @@ onMounted(() => {
   --button-text-color: white;
 }
 
-/* Define dark mode colors */
 .dark-mode {
   --bg-color: #181818;
   --text-color: #e0e0e0;
@@ -62,7 +60,6 @@ onMounted(() => {
   --button-text-color: white;
 }
 
-/* Apply the variables */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -84,21 +81,20 @@ div {
   color: var(--text-color);
 }
 
-/* Style for dark mode toggle button */
 .dark-mode-toggle {
   margin: 20px;
-  padding: 0; /* Remove padding to fit image exactly */
-  background: none; /* Remove default button background */
-  border: none; /* Remove default button border */
-  border-radius: 50%; /* Round button corners */
+  padding: 0; 
+  background: none; 
+  border: none; 
+  border-radius: 50%; 
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease;
 }
 
 .dark-mode-toggle img {
-  width: 24px; /* Set size for the icon */
+  width: 24px; 
   height: 24px;
-  display: block; /* Ensure no extra space around the image */
+  display: block; 
 }
 
 .dark-mode-toggle:hover {
